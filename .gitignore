@@ -37,3 +37,5 @@ SUPER LATEST/
 *.xlsx
 *.xls
 *.docx
+
+.vercel
