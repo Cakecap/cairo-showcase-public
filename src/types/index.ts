@@ -1,3 +1,8 @@
+export interface ProjectDemoVideo {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -6,7 +11,7 @@ export interface Project {
   summary: string;
   description: string;
   category: string;
-  status: 'Active' | 'Completed' | 'Ongoing' | 'Prototype';
+  status: 'Active' | 'Completed' | 'Ongoing' | 'Prototype' | 'TBA';
   year: number;
   duration: string;
   pic: string;
@@ -19,7 +24,11 @@ export interface Project {
   heroImage: string;
   galleryImages: string[];
   demoVideoUrl?: string;
+  demoVideos?: ProjectDemoVideo[];
+  projectPageUrl?: string;
   featured: boolean;
+  visibilityStatus?: 'draft' | 'published' | 'archived';
+  featuredOrder?: number;
 }
 
 export type ProjectCategory =

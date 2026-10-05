@@ -7,10 +7,18 @@ export default {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       colors: {
+        background: 'rgb(var(--color-bg) / <alpha-value>)',
+        surface: {
+          DEFAULT: 'rgb(var(--color-surface) / <alpha-value>)',
+          elevated: 'rgb(var(--color-surface-elevated) / <alpha-value>)',
+          muted: 'rgb(var(--color-surface-muted) / <alpha-value>)',
+        },
         accent: {
-          DEFAULT: '#06b6d4',
-          dark: '#0891b2',
-          light: '#22d3ee',
+          DEFAULT: 'rgb(var(--color-accent) / <alpha-value>)',
+          dark: 'rgb(var(--color-accent-dark) / <alpha-value>)',
+          soft: 'rgb(var(--color-accent-soft) / <alpha-value>)',
+          highlight: 'rgb(var(--color-accent-highlight) / <alpha-value>)',
+          gold: 'rgb(var(--color-accent-gold) / <alpha-value>)',
         },
       },
       height: {

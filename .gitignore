@@ -20,4 +20,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-.env
+.env*
+!.env.example
+.vercel
+
+# Public deployment must not absorb local/full-stack or source-reference material.
+server/
+uploads/
+backups/
+/media/
+SUPER LATEST/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.xlsx
+*.xls
+*.docx
